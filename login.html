@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>贪吃蛇</title>
+	<meta charset="utf-8">
+	<script type="text/javascript"src='./script/login.js'></script>
+	<style type="text/css">
+	@font-face{
+		font-family: 'a';
+		src:url('./font/broadw.ttf');
+	}
+	body{
+		font-family: 'a';
+		background: url('./images/v.jpg');
+	}
+	.logo{
+		width: 100px;
+		height: 100px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		top: 30;
+		z-index: 1000;
+	}
+	.logo-j{
+		width: 100px;
+		height: 100px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		top: 30;
+		right: 0;
+		z-index: 1000;
+	}
+	.logo{
+		-webkit-animation-name:a5;
+		-webkit-animation-duration:3s;
+		-webkit-animation-timing-function:ease;
+		-webkit-animation-iteration-count:infinite;
+	}
+	@-webkit-keyframes a5{
+		0%{-webkit-transform:translateY(-1000px);opacity: 0;}
+		60%{-webkit-transform:translateY(20px); opacity: 1;}
+		75%{-webkit-transform:translateY(-10px);}
+		90%{-webkit-transform:translateY(5px);}
+	}
+	#play{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: green;
+		margin:0 auto;
+		margin-top: 400px;
+		text-align: center;
+		line-height: 100px;
+		font-weight: 700;
+		font-size: 40px;
+		color: white;
+		box-shadow: 2px 1px 2px 7px #074707;
+	}
+	#play:hover{
+		transform:scale(.9,.9);
+	}
+	</style>
+</head>
+<body>
+	<div><img class="logo" src="./images/aaa.png"></div>
+	<div><img class="logo logo-j" src="./images/aaa.png"></div>
+	<div id="play">Play</div>
+</body>>
+</html>
